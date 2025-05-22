@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const ThemeSwitch = () => {
-  let darkThemeName = "business";
-  let lightThemeName = "corporate";
+  let darkThemeName = "ssa_dark";
+  let lightThemeName = "ssa_light";
 
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || lightThemeName;
