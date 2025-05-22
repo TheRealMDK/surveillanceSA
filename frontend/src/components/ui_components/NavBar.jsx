@@ -140,6 +140,9 @@ const NavBar = ({ content }) => {
               offset={-64}
               activeClass="menu-active"
               className="rounded-sm"
+              onClick={() => {
+                document.getElementById("my-drawer-3").checked = false;
+              }}
             >
               Home
             </Link>
@@ -153,6 +156,9 @@ const NavBar = ({ content }) => {
               offset={-64}
               activeClass="menu-active"
               className="rounded-sm"
+              onClick={() => {
+                document.getElementById("my-drawer-3").checked = false;
+              }}
             >
               About
             </Link>
@@ -166,6 +172,9 @@ const NavBar = ({ content }) => {
               offset={-64}
               activeClass="menu-active"
               className="rounded-sm"
+              onClick={() => {
+                document.getElementById("my-drawer-3").checked = false;
+              }}
             >
               Services
             </Link>
@@ -179,6 +188,9 @@ const NavBar = ({ content }) => {
               offset={-64}
               activeClass="menu-active"
               className="rounded-sm"
+              onClick={() => {
+                document.getElementById("my-drawer-3").checked = false;
+              }}
             >
               Gallery
             </Link>
@@ -192,6 +204,9 @@ const NavBar = ({ content }) => {
               offset={-64}
               activeClass="menu-active"
               className="rounded-sm"
+              onClick={() => {
+                document.getElementById("my-drawer-3").checked = false;
+              }}
             >
               Contact Us
             </Link>
