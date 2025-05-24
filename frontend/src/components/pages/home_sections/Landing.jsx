@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 const Landing = () => {
   return (
     <>
@@ -17,7 +19,17 @@ const Landing = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-64}
+              activeClass=""
+              className=""
+            >
+              <button className="btn btn-primary">Get Started</button>
+            </Link>
           </div>
         </div>
       </div>

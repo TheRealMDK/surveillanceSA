@@ -8,7 +8,7 @@ const ContactForm = () => {
               <label className="floating-label basis-1/2">
                 <input
                   type="text"
-                  className="input rounded-2xl w-full"
+                  className="input w-full"
                   placeholder="Full Name"
                 />
                 <span>Full Name</span>
@@ -17,7 +17,7 @@ const ContactForm = () => {
               <label className="floating-label basis-1/2">
                 <input
                   type="tel"
-                  className="input rounded-2xl w-full"
+                  className="input w-full"
                   placeholder="Contact Number"
                 />
                 <span>Contact Number</span>
@@ -27,7 +27,7 @@ const ContactForm = () => {
             <label className="floating-label">
               <input
                 type="email"
-                className="input rounded-2xl w-full"
+                className="input w-full"
                 placeholder="Email Address"
               />
               <span>Email Address</span>
@@ -36,7 +36,7 @@ const ContactForm = () => {
             <label className="floating-label">
               <input
                 type="text"
-                className="input rounded-2xl w-full"
+                className="input w-full"
                 placeholder="Subject"
               />
               <span>Subject</span>
@@ -44,7 +44,7 @@ const ContactForm = () => {
 
             <label className="floating-label">
               <textarea
-                className="textarea rounded-2xl w-full h-[150px] leading-relaxed"
+                className="textarea w-full h-[150px] leading-relaxed"
                 placeholder="Message"
               />
               <span>Message</span>
@@ -54,7 +54,7 @@ const ContactForm = () => {
               <input
                 type="submit"
                 value="Submit"
-                className="btn rounded-2xl btn-wide btn-primary active:shadow-inner shadow-neutral-800 transition-all duration-300 ease-in-out shadow-md dark:shadow-sm dark:shadow-primary dark:active:shadow-inner dark:active:shadow-neutral-800 border-0 dark:border-1 border-primary"
+                className="btn btn-wide btn-primary active:shadow-inner shadow-neutral-800 transition-all duration-300 ease-in-out shadow-md dark:shadow-sm dark:shadow-primary dark:active:shadow-inner dark:active:shadow-neutral-800 border-0 dark:border-1 border-primary"
               />
             </div>
           </fieldset>

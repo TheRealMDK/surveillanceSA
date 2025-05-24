@@ -54,7 +54,7 @@ const NavBar = ({ content }) => {
                     duration={500}
                     offset={-64}
                     activeClass="menu-active"
-                    className="rounded-sm"
+                    className=""
                   >
                     Home
                   </Link>
@@ -67,7 +67,7 @@ const NavBar = ({ content }) => {
                     duration={500}
                     offset={-64}
                     activeClass="menu-active"
-                    className="rounded-sm"
+                    className=""
                   >
                     About
                   </Link>
@@ -80,7 +80,7 @@ const NavBar = ({ content }) => {
                     duration={500}
                     offset={-64}
                     activeClass="menu-active"
-                    className="rounded-sm"
+                    className=""
                   >
                     Services
                   </Link>
@@ -93,7 +93,7 @@ const NavBar = ({ content }) => {
                     duration={500}
                     offset={-64}
                     activeClass="menu-active"
-                    className="rounded-sm"
+                    className=""
                   >
                     Gallery
                   </Link>
@@ -106,7 +106,7 @@ const NavBar = ({ content }) => {
                     duration={500}
                     offset={-64}
                     activeClass="menu-active"
-                    className="rounded-sm"
+                    className=""
                   >
                     Contact Us
                   </Link>
@@ -139,7 +139,7 @@ const NavBar = ({ content }) => {
               duration={500}
               offset={-64}
               activeClass="menu-active"
-              className="rounded-sm"
+              className=""
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
@@ -155,7 +155,7 @@ const NavBar = ({ content }) => {
               duration={500}
               offset={-64}
               activeClass="menu-active"
-              className="rounded-sm"
+              className=""
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
@@ -171,7 +171,7 @@ const NavBar = ({ content }) => {
               duration={500}
               offset={-64}
               activeClass="menu-active"
-              className="rounded-sm"
+              className=""
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
@@ -187,7 +187,7 @@ const NavBar = ({ content }) => {
               duration={500}
               offset={-64}
               activeClass="menu-active"
-              className="rounded-sm"
+              className=""
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
@@ -203,7 +203,7 @@ const NavBar = ({ content }) => {
               duration={500}
               offset={-64}
               activeClass="menu-active"
-              className="rounded-sm"
+              className=""
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
