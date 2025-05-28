@@ -1,9 +1,9 @@
 const ContactForm = () => {
   return (
     <>
-      <div className="card landscape:h-[475px] portrait:h-full w-full flex-1 bg-base-200 shrink-0 shadow-md dark:shadow-none shadow-neutral-400 border-0 dark:border-1 border-neutral-800 justify-center flex items-center">
-        <div className="card-body w-full flex flex-col justify-center items-center">
-          <fieldset className="fieldset flex flex-col gap-6 w-full">
+      <div className="card w-full h-[calc(100dvh_-_150px)] bg-transparent shadow-md dark:shadow-none shadow-neutral-400 border-0 dark:border-1 border-neutral-800 justify-center flex items-center">
+        <div className="card-body flex flex-col justify-center items-center w-full">
+          <fieldset className="fieldset flex grow flex-col gap-6 w-full">
             <div className="flex flex-col sm:flex-row gap-4">
               <label className="floating-label basis-1/2">
                 <input
@@ -42,9 +42,9 @@ const ContactForm = () => {
               <span>Subject</span>
             </label>
 
-            <label className="floating-label">
+            <label className="floating-label flex flex-col grow">
               <textarea
-                className="textarea w-full h-[150px] leading-relaxed"
+                className="textarea w-full grow resize-none leading-relaxed"
                 placeholder="Message"
               />
               <span>Message</span>

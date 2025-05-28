@@ -4,9 +4,11 @@ import Map from "../../ui_components/Map";
 const ContactUs = () => {
   return (
     <>
-      <div className="h-[calc(100dvh_-_150px)] w-[80vw] flex justify-center items-center">
-        <div className="flex landscpae:flex-row portrait:flex-col justify-between w-full h-full items-center gap-16">
+      <div className="w-[80vw] flex landscape:flex-row portrait:flex-col portrait:py-8 gap-16">
+        <div className="flex-1 bg-base-200">
           <ContactForm />
+        </div>
+        <div className="flex-1">
           <Map />
         </div>
       </div>

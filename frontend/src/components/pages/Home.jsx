@@ -33,7 +33,7 @@ const Home = () => {
         <Element name="contact" className="">
           <div
             id="contact"
-            className="h-[calc(100dvh_-_64px)] flex items-center justify-center"
+            className="landscape:h-[calc(100dvh_-_64px)] flex items-center justify-center"
           >
             <ContactUs />
           </div>
