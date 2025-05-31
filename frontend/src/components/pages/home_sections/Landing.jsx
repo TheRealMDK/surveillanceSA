@@ -2,19 +2,14 @@ import useIsLandscape from "../../../hooks/useIsLandscape.js";
 import { Link } from "react-scroll";
 import landingBgLandscape from "../../../assets/landingBgLandscape.png";
 import landingBgPortrait from "../../../assets/landingBgPortrait.png";
+import { GlobeSouthAfrica } from "../../ui_components/GlobeSouthAfrica";
 
 const Landing = () => {
   const isLandscape = useIsLandscape();
   return (
     <>
       <div className="hero h-[calc(100dvh_-_64px)] w-screen relative">
-        <img
-          src={isLandscape ? landingBgLandscape : landingBgPortrait}
-          className={`absolute inset-0 h-[calc(100dvh_-_64px)] object-contain  max-w-none ${
-            isLandscape ? "object-right w-full" : "object-top w-screen"
-          }`}
-          alt="background_image"
-        />
+        <GlobeSouthAfrica />
         {/* <div className="hero-overlay"></div> */}
         <div className="hero-content text-base-content w-full portrait:text-center portrait:absolute portrait:bottom-0 portrait:left-0 portrait:mb-[33%]">
           <div className="w-[100%]">

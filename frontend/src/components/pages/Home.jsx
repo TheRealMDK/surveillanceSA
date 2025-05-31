@@ -10,7 +10,10 @@ const Home = () => {
     <>
       <div className="flex flex-col">
         <div className="h-[64px]"></div>
-        <Element name="landing" className="active">
+        <Element
+          name="landing"
+          className="active bg-[url('2k_stars_milky_way.jpg')]"
+        >
           <div className="h-[calc(100dvh_-_64px)] flex items-center justify-center">
             <Landing />
           </div>
