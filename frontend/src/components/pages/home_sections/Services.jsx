@@ -2,7 +2,7 @@ const Services = () => {
   return (
     <>
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-lift w-[80vw]">
+      <div className="tabs tabs-lift w-[80vw] h-[calc(100dvh_-_150px)]">
         <input
           type="radio"
           name="my_tabs_3"
