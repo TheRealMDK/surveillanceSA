@@ -1,7 +1,7 @@
 import useIsLandscape from "../../../hooks/useIsLandscape.js";
 import { Link } from "react-scroll";
-import landingBgLandscape from "../../../assets/landingBgLandscape.png";
-import landingBgPortrait from "../../../assets/landingBgPortrait.png";
+import landingBgLandscape from "../../../assets/images/sections/landing/landingBgLandscape.png";
+import landingBgPortrait from "../../../assets/images/sections/landing/landingBgPortrait.png";
 
 const Landing = () => {
   const isLandscape = useIsLandscape();

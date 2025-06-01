@@ -5,7 +5,7 @@ const ThemeSwitch = () => {
   let lightThemeName = "ssa_light";
 
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || lightThemeName;
+    return localStorage.getItem("theme") || darkThemeName;
   });
 
   useEffect(() => {
