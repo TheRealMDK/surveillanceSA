@@ -1,4 +1,4 @@
-const Map = () => {
+const ContactMap = () => {
   return (
     <>
       <div className="h-[calc(100dvh_-_150px)] w-full flex justify-center items-center dark:shadow-none shadow-neutral-400 border-0 dark:border-1 border-neutral-800 card overflow-hidden shadow-md">
@@ -16,4 +16,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default ContactMap;

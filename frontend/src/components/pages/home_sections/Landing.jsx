@@ -1,28 +1,21 @@
-import useIsLandscape from "../../../hooks/useIsLandscape.js";
 import { Link } from "react-scroll";
-import landingBgLandscape from "../../../assets/images/sections/landing/landingBgLandscape.png";
-import landingBgPortrait from "../../../assets/images/sections/landing/landingBgPortrait.png";
+import LandingMap from "../../ui_components/LandingMap";
 
 const Landing = () => {
-  const isLandscape = useIsLandscape();
   return (
     <>
-      <div className="hero h-[calc(100dvh_-_64px)] w-screen relative">
-        <img
-          src={isLandscape ? landingBgLandscape : landingBgPortrait}
-          className={`absolute inset-0 h-[calc(100dvh_-_64px)] object-cover xl:object-contain landscape:object-contain  max-w-none ${
-            isLandscape ? "object-right w-full" : "object-top w-full"
-          }`}
-          alt="background_image"
-        />
-        {/* <div className="hero-overlay"></div> */}
-        <div className="hero-content md:justify-start text-base-content w-full portrait:text-center portrait:absolute portrait:bottom-0 portrait:left-0 portrait:mb-[33%]">
-          <div className="md:ml-[10%] w-[100%] md:w-[50%]">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5 text-left leading-relaxed">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+      <div className="w-[calc(100%_-_2rem)] md:w-[80vw] h-[calc(100dvh_-_64px)] flex flex-col-reverse md:flex-row md:gap-4">
+        <div className="flex-1">
+          <div className="h-[calc((100dvh_-_64px)_/_2)] md:h-[calc(100dvh_-_64px)] flex flex-col justify-center items-center md:items-start gap-4">
+            <h1 className="font-bold text-5xl leading-tight text-center md:text-left">
+              Every <span className="text-primary font-semibold">Angle</span>{" "}
+              <br />
+              <span className="text-primary font-semibold">Every</span> Moment
+            </h1>
+            <p className="leading-relaxed text-center md:text-left text-xl">
+              More than just footage after the fact.
+              <br />
+              Proactive security and intelligent monitoring in real time.
             </p>
             <Link
               to="contact"
@@ -38,6 +31,9 @@ const Landing = () => {
               </button>
             </Link>
           </div>
+        </div>
+        <div className="flex-1 flex items-center justify-center">
+          <LandingMap className="w-full h-auto" />
         </div>
       </div>
     </>

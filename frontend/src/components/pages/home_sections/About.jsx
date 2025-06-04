@@ -3,7 +3,7 @@ import aboutBgLandscape from "../../../assets/images/sections/about/aboutBgLands
 const About = () => {
   return (
     <>
-      <div className="w-[80vw] h-[calc(100dvh_-_150px)] flex md:flex-row flex-col gap-4 md:gap-0">
+      <div className="w-[calc(100%_-_2rem)] md:w-[80vw] h-[calc(100dvh_-_150px)] flex md:flex-row flex-col gap-4 md:gap-0">
         <div className="flex-1 flex justify-center items-center md:px-8 px-4">
           <div className="h-full w-auto flex items-center justify-center">
             <img
@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="flex-1 flex justify-center items-center md:px-8 px-4">
           <div className="max-h-full w-full grow flex items-center justify-center">
-            <p className="overflow-y-scroll grow md:h-[calc(100dvh_-_150px)] h-[calc((100dvh_-_150px)_/_2)] leading-relaxed">
+            <p className="overflow-y-scroll grow md:max-h-[calc(100dvh_-_150px)] max-h-[calc((100dvh_-_150px)_/_2)] leading-relaxed">
               Surveillance SA is a cutting-edge security technology company
               based in Mossel Bay, South Africa. As certified Dahua Technology
               partners, we specialize in intelligent CCTV systems and proactive
