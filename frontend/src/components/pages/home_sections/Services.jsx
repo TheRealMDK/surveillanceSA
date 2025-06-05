@@ -10,8 +10,8 @@ const Services = () => {
             className="tab"
             aria-label="Tab 1"
           />
-          <div className="tab-content min-h-[calc(100dvh_-_150px)] bg-base-100 border-base-300 p-6">
-            <div className="flex justify-center items-center h-full">
+          <div className="tab-content min-h-[calc(100dvh_-_150px)] bg-base-100 border-base-300 p-6 md:bg-[url('/service1ll.png')] dark:md:bg-[url('/service1ld.png')] bg-cover bg-center">
+            <div className="w-full h-full flex justify-center items-center">
               Tab content 1
             </div>
           </div>

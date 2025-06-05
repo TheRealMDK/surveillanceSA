@@ -1,17 +1,4 @@
 const LandingMap = ({ className = "" }) => {
-  const pathStyle = {
-    fill: "#009A99",
-    fillOpacity: 1,
-    fillRule: "nonzero",
-    stroke: "#000000",
-    strokeWidth: 0.25,
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeMiterlimit: 4,
-    strokeDasharray: "none",
-    strokeOpacity: 1,
-  };
-
   const pathClass =
     "transition-all duration-200 ease-in-out fill-[#009A99] fill-opacity-100 fill-opacity-100 stroke-black stroke-[0.25] stroke-linecap-round stroke-linejoin-round stroke-miterlimit-[4] stroke-dasharray-none stroke-opacity-100 hover:fill-red-700";
 
@@ -25,7 +12,7 @@ const LandingMap = ({ className = "" }) => {
         height="436.12759"
         viewBox="0 0 496.83093 436.12759"
         xmlns="http://www.w3.org/2000/svg"
-        xmlnsSvg="http://www.w3.org/2000/svg"
+        xmlnssvg="http://www.w3.org/2000/svg"
       >
         <defs id="defs1" />
         <g id="layer-MC1" transform="translate(-232.92027,-143.85107)">
