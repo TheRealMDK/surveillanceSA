@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
+const defaultTheme = "ssa_dark";
+
 const getCurrentTheme = () => {
   return (
     document.documentElement.getAttribute("data-theme") ||
     localStorage.getItem("theme") ||
-    "ssa_dark" // default
+    defaultTheme // default
   );
 };
 

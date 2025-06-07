@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router";
+import { Element } from "react-scroll";
 import NavBar from "./components/ui_components/NavBar";
 import Footer from "./components/ui_components/Footer";
 import Home from "./components/pages/Home";
@@ -13,7 +14,9 @@ function App() {
           </Routes>
         }
       />
-      <Footer />
+      <Element name="footer" className="active">
+        <Footer />
+      </Element>
     </>
   );
 }

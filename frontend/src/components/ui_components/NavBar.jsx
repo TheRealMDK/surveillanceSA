@@ -1,10 +1,9 @@
 import { Link } from "react-scroll";
 import ThemeSwitch from "../../components/ui_components/ThemeSwitch";
-import useHasScrolled from "../../hooks/useHasScrolled"
+import useHasScrolled from "../../hooks/useHasScrolled";
 
 const NavBar = ({ content }) => {
-
-  const hasScrolled= useHasScrolled();
+  const hasScrolled = useHasScrolled();
 
   return (
     <div id="top" className="drawer">
@@ -35,7 +34,7 @@ const NavBar = ({ content }) => {
               </label>
             </div>
             <Link
-              to={hasScrolled ? "landing" : "contact" }
+              to={hasScrolled ? "landing" : "footer"}
               spy={true}
               smooth={true}
               duration={500}
