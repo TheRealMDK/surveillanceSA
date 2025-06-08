@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import LandingMap from "../../ui_components/LandingMap";
+import LandingMap from "../../../ui_components/home_route/landing/LandingMap";
 
 const Landing = () => {
   return (

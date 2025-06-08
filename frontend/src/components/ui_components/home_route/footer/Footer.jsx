@@ -1,6 +1,6 @@
-import Logo from "../ui_components/Logo";
-import fbLogo from "../../assets/logos/socials/Facebook_Logo_Primary.png";
-import igLogo from "../../assets/logos/socials/Instagram_Glyph_Gradient.png";
+import Logo from "../../Logo";
+import fbLogo from "../../../../assets/logos/socials/Facebook_Logo_Primary.png";
+import igLogo from "../../../../assets/logos/socials/Instagram_Glyph_Gradient.png";
 
 const Footer = () => {
   return (

@@ -1,8 +1,8 @@
 // import aboutBgLandscape from "../../../assets/temp/aboutBgLandscape.png";
-import CertifiedInstallerIcon from "../../ui_components/icons/CertifiedInstallerIcon";
-import SolarAndRemoteIcon from "../../ui_components/icons/SolarAndRemoteIcon";
-import HumanAndVehicleAiIcon from "../../ui_components/icons/HumanAndVehicleAiIcon";
-import LiveMonitoringIcon from "../../ui_components/icons/LiveMonitoringIcon";
+import CertifiedInstallerIcon from "../../../ui_components/icons/CertifiedInstallerIcon";
+// import SolarAndRemoteIcon from "../../../ui_components/icons/SolarAndRemoteIcon";
+// import HumanAndVehicleAiIcon from "../../../ui_components/icons/HumanAndVehicleAiIcon";
+// import LiveMonitoringIcon from "../../../ui_components/icons/LiveMonitoringIcon";
 
 const About = () => {
   return (

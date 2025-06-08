@@ -23,7 +23,7 @@ const CertifiedInstallerIcon = ({ className = "" }) => {
           </clipPath>
         </defs>
         <g
-          clip-path="url(#275e81ca9d)"
+          clipPath="url(#275e81ca9d)"
           id="g252"
           transform="matrix(0.29080496,0,0,0.29080496,-161.0795,-119.48449)"
         >

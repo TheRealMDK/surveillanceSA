@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
-import ThemeSwitch from "../../components/ui_components/ThemeSwitch";
-import useHasScrolled from "../../hooks/useHasScrolled";
+import ThemeSwitch from "../../ThemeSwitch";
+import useHasScrolled from "../../../../hooks/useHasScrolled";
 
 const NavBar = ({ content }) => {
   const hasScrolled = useHasScrolled();

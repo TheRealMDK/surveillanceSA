@@ -1,5 +1,5 @@
-import ContactForm from "../../ui_components/ContactForm";
-import Map from "../../ui_components/ContactMap";
+import ContactForm from "../../../ui_components/home_route/contact_us/ContactForm";
+import Map from "../../../ui_components/home_route/contact_us/ContactMap";
 
 const ContactUs = () => {
   return (
