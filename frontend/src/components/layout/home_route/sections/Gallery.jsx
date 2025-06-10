@@ -35,7 +35,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/1.png"
+            src="/gallery/desktop/1.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -58,7 +58,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/2.png"
+            src="/gallery/desktop/2.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -81,7 +81,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/3.png"
+            src="/gallery/desktop/3.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -104,7 +104,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/4.png"
+            src="/gallery/desktop/4.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -127,7 +127,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/5.png"
+            src="/gallery/desktop/5.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -150,7 +150,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/6.png"
+            src="/gallery/desktop/6.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -173,7 +173,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/7.png"
+            src="/gallery/desktop/7.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -196,7 +196,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/8.png"
+            src="/gallery/desktop/8.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -219,7 +219,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/9.png"
+            src="/gallery/desktop/9.png"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -242,7 +242,7 @@ const Gallery = () => {
           className="relative carousel-item w-full flex items-center justify-center"
         >
           <img
-            src="/gallery_section/desktop/1.jpg"
+            src="/gallery/desktop/1.jpg"
             className="w-full h-full object-fit"
           />
           <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
