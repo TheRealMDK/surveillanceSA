@@ -10,7 +10,7 @@ const CamerasOnPoleIcon = ({ className = "" }) => {
         viewBox="0 0 6.9412537 9.5249987"
         version="1.1"
         id="svg1"
-        xmlspace="preserve"
+        xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"
         xmlnssvg="http://www.w3.org/2000/svg"
       >
