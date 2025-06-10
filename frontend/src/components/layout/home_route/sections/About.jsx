@@ -1,5 +1,6 @@
 // import aboutBgLandscape from "../../../assets/temp/aboutBgLandscape.png";
-import CertifiedInstallerIcon from "../../../ui_components/icons/CertifiedInstallerIcon";
+import CamerasOnPoleIcon from "../../../ui_components/icons/CamerasOnPoleIcon";
+// import CertifiedInstallerIcon from "../../../ui_components/icons/CertifiedInstallerIcon";
 // import SolarAndRemoteIcon from "../../../ui_components/icons/SolarAndRemoteIcon";
 // import HumanAndVehicleAiIcon from "../../../ui_components/icons/HumanAndVehicleAiIcon";
 // import LiveMonitoringIcon from "../../../ui_components/icons/LiveMonitoringIcon";
@@ -10,7 +11,8 @@ const About = () => {
       <div className="w-[calc(100%_-_2rem)] md:w-[80vw] h-[calc(100dvh_-_150px)] flex md:flex-row flex-col gap-4 md:gap-0">
         <div className="flex-1 flex justify-center items-center md:px-8 px-4">
           <div className="h-full w-auto flex items-center justify-center">
-            <CertifiedInstallerIcon className="w-auto h-full aspect-square" />
+            <CamerasOnPoleIcon className="w-auto h-full aspect-square" />
+            {/* <CertifiedInstallerIcon className="w-auto h-full aspect-square" /> */}
             {/* <SolarAndRemoteIcon className="w-auto h-full aspect-square" /> */}
             {/* <HumanAndVehicleAiIcon className="w-auto h-full aspect-square" /> */}
             {/* <LiveMonitoringIcon className="w-auto h-full aspect-square" /> */}
