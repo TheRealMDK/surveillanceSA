@@ -76,7 +76,9 @@
 }
 
 @theme {
+  --color-cyber_teal_tint: #40b3b3;
   --color-cyber_teal: #009a99;
+  --color-cyber_teal_shade: #007473;
   --font-Poppins: "Poppins";
 }
 

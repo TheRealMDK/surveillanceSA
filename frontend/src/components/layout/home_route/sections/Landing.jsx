@@ -8,9 +8,17 @@ const Landing = () => {
         <div className="flex-1">
           <div className="h-[calc((100dvh_-_64px)_/_2)] md:h-[calc(100dvh_-_64px)] flex flex-col justify-center items-center md:items-start gap-4">
             <h1 className="font-bold text-5xl leading-tight text-center md:text-left">
-              Every <span className="text-primary font-semibold">Angle</span>{" "}
+              <span className="text-shadow-sm text-shadow-white">Every </span>
+              <span className="text-cyber_teal text-shadow-sm text-shadow-cyber_teal_tint">
+                Angle
+              </span>
               <br />
-              <span className="text-primary font-semibold">Every</span> Moment
+              <span className="text-cyber_teal text-shadow-sm text-shadow-cyber_teal_tint">
+                Every
+              </span>{" "}
+              <span className="text-shadow-sm text-shadow-black dark:text-shadow-white">
+                Moment
+              </span>
             </h1>
             <p className="leading-relaxed text-center md:text-left text-xl">
               More than just footage after the fact.
