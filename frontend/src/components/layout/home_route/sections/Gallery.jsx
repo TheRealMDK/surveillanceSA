@@ -32,7 +32,7 @@ const Gallery = () => {
   return (
     <>
       {isLandscape ? (
-        <div className="w-[calc(100%_-_2rem)] md:w-[80vw] h-[calc(100dvh_-_150px)] carousel carousel-center bg-neutral space-x-4">
+        <div className="w-[calc(100%_-_2rem)] md:w-[80vw] h-[calc(100dvh_-_150px)] rounded-sm overflow-hidden carousel carousel-center bg-neutral space-x-4">
           <div
             id="slide1"
             className="relative carousel-item w-full flex items-center justify-center"

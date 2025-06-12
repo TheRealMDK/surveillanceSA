@@ -10,7 +10,9 @@ const NavBar = ({ content }) => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle z-30" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="navbar bg-base-300 w-full fixed top-0 z-10 shadow-md dark:shadow-none shadow-neutral-400 border-0 dark:border-1 border-neutral-800">
+        <div
+          className={`navbar bg-base-300 w-full fixed top-0 z-10 ${hasScrolled ? "shadow-md dark:shadow-none shadow-neutral-400 dark:border-1 border-neutral-800" : "border-0 shadow-none"}`}
+        >
           <div className="navbar-start">
             <div className="flex-none lg:hidden">
               <label
