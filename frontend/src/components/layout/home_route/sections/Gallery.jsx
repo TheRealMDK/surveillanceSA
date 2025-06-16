@@ -7,7 +7,7 @@ const Gallery = () => {
     const buttons = document.querySelectorAll(".carousel-nav a");
     buttons.forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent the vertical page scroll
+        e.preventDefault();
 
         const targetId = btn.getAttribute("href")?.replace("#", "");
         const targetEl = document.getElementById(targetId);
@@ -16,16 +16,15 @@ const Gallery = () => {
           targetEl.scrollIntoView({
             behavior: "smooth",
             inline: "center",
-            block: "nearest", // Avoid vertical scroll
+            block: "nearest",
           });
         }
       });
     });
 
-    // Cleanup to avoid memory leaks
     return () => {
       buttons.forEach((btn) => {
-        btn.replaceWith(btn.cloneNode(true)); // Remove listeners safely
+        btn.replaceWith(btn.cloneNode(true));
       });
     };
   }, []);

@@ -1,9 +1,4 @@
-// import aboutBgLandscape from "../../../assets/temp/aboutBgLandscape.png";
 import CamerasOnPoleIcon from "../../../ui_components/icons/CamerasOnPoleIcon";
-// import CertifiedInstallerIcon from "../../../ui_components/icons/CertifiedInstallerIcon";
-// import SolarAndRemoteIcon from "../../../ui_components/icons/SolarAndRemoteIcon";
-// import HumanAndVehicleAiIcon from "../../../ui_components/icons/HumanAndVehicleAiIcon";
-// import LiveMonitoringIcon from "../../../ui_components/icons/LiveMonitoringIcon";
 
 const About = () => {
   return (
@@ -12,15 +7,6 @@ const About = () => {
         <div className="flex-1 flex justify-center items-center md:px-8 px-4">
           <div className="h-full w-auto flex items-center justify-center">
             <CamerasOnPoleIcon className="w-auto h-full aspect-square" />
-            {/* <CertifiedInstallerIcon className="w-auto h-full aspect-square" /> */}
-            {/* <SolarAndRemoteIcon className="w-auto h-full aspect-square" /> */}
-            {/* <HumanAndVehicleAiIcon className="w-auto h-full aspect-square" /> */}
-            {/* <LiveMonitoringIcon className="w-auto h-full aspect-square" /> */}
-            {/* <img */}
-            {/*   src={aboutBgLandscape} */}
-            {/*   className="w-full h-auto" */}
-            {/*   alt="background_image" */}
-            {/* /> */}
           </div>
         </div>
         <div className="flex-1 flex justify-center items-center md:px-8 px-4">

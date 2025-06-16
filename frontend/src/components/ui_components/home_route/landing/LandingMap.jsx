@@ -1,6 +1,6 @@
 const LandingMap = ({ className = "" }) => {
   const pathClass =
-    "transition-all duration-200 ease-in-out fill-[#009A99] fill-opacity-100 fill-opacity-100 stroke-black stroke-[0.25] stroke-linecap-round stroke-linejoin-round stroke-miterlimit-[4] stroke-dasharray-none stroke-opacity-100 hover:fill-red-700";
+    "transition-all duration-200 ease-in-out fill-[#009A99] fill-opacity-100 fill-opacity-100 stroke-black stroke-[0.25] stroke-linecap-round stroke-linejoin-round stroke-miterlimit-[4] stroke-dasharray-none stroke-opacity-100 hover:fill-red-700 active:fill-red-700 focus:fill-red-700";
 
   return (
     <>

@@ -14,7 +14,6 @@ const Home = () => {
       <NavBar
         content={
           <div className="flex flex-col">
-            {/* <div className="fixed inset-0 w-full h-full -z-20 bg-clip-padding bg-[linear-gradient(#009a99_1.4px,_transparent_1.4px),linear-gradient(to_right,_#009a99_1.4px,_transparent_1.4px)] bg-[size:75px_75px] dark:bg-[size:60px_60px]"></div> */}
             <div className="fixed inset-0 w-full h-full -z-20 bg-clip-padding">
               <Grid />
             </div>
