@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { latLongToVector3 } from "../utils/geo";
 import { PIN_RADIUS, SHOW_PINS } from "../GlobeOptions";
 
-const Pin = forwardRef(({ lat, lon, radius = 1.01 }, ref) => {
+const Pin = forwardRef(({ lat, lon, radius = PIN_RADIUS }, ref) => {
   const position = latLongToVector3(lat, lon, radius);
 
   return (

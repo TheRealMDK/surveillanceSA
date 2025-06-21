@@ -22,12 +22,11 @@ import {
 
 export default function Globe() {
   const lightRef = useRef();
-
   const travelPath = TRAVEL_PATH;
-
   const pins = PINS;
-
   const rotationRef = useRef([0, 0, 0]);
+  const pinRefs = useRef(pins.map(() => React.createRef()));
+  const travelRefs = useRef(travelPath.map(() => React.createRef()));
 
   useEffect(() => {
     const path = travelPath.length >= 2 ? travelPath : DEFAULT_TRAVEL_PATH;
@@ -50,9 +49,6 @@ export default function Globe() {
       },
     });
   }, [travelPath]);
-
-  const pinRefs = useRef(pins.map(() => React.createRef()));
-  const travelRefs = useRef(travelPath.map(() => React.createRef()));
 
   return (
     <div className="w-full h-full bg-transparent">
