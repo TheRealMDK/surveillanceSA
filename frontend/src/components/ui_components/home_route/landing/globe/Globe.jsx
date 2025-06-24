@@ -42,7 +42,7 @@ export default function Globe() {
     gsap.to(state, {
       progress: GLOBE_INITIAL_ANIMATION_SPEED,
       duration: GLOBE_INITIAL_ANIMATION_DURATION,
-      ease: "power2.inOut",
+      ease: "power2.Out",
       onUpdate: () => {
         const point = getCatmullRomPoint(rotations, state.progress);
         rotationRef.current = [point.x, point.y, 0];
