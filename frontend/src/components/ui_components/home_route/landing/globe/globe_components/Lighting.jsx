@@ -2,7 +2,10 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { useThree, useFrame } from "@react-three/fiber";
 import {
-  MAKE_LIGHT_GREEN,
+  AMBIENT_LIGHT_COLOR,
+  DIRECTIONAL_LIGHT_COLOR,
+  CHANGE_AMBIENT_LIGHT_COLOR,
+  CHANGE_DIRECTIONAL_LIGHT_COLOR,
   DIRECTIONAL_LIGHT_INTENSITY,
   AMBIENT_LIGHT_INTENSITY,
   DISTANCE_FROM_CAMERA,
@@ -13,27 +16,31 @@ export default function Lighting({ lightRef }) {
   const targetRef = useRef(new THREE.Object3D());
 
   useEffect(() => {
-    const light = MAKE_LIGHT_GREEN
-      ? new THREE.DirectionalLight(0x009a99, DIRECTIONAL_LIGHT_INTENSITY)
+    const light = CHANGE_DIRECTIONAL_LIGHT_COLOR
+      ? new THREE.DirectionalLight(
+          DIRECTIONAL_LIGHT_COLOR,
+          DIRECTIONAL_LIGHT_INTENSITY,
+        )
       : new THREE.DirectionalLight(0xffffff, DIRECTIONAL_LIGHT_INTENSITY);
     lightRef.current = light;
 
-    const ambient = MAKE_LIGHT_GREEN
-      ? new THREE.AmbientLight(0x009a99, AMBIENT_LIGHT_INTENSITY)
+    const ambient = CHANGE_AMBIENT_LIGHT_COLOR
+      ? new THREE.AmbientLight(AMBIENT_LIGHT_COLOR, AMBIENT_LIGHT_INTENSITY)
       : new THREE.AmbientLight(0xffffff, AMBIENT_LIGHT_INTENSITY);
     scene.add(light);
     scene.add(ambient);
 
-    targetRef.current.position.set(0, 0, 0);
-    light.target = targetRef.current;
-    scene.add(targetRef.current);
+    const target = targetRef.current;
+    target.position.set(0, 0, 0);
+    light.target = target;
+    scene.add(target);
 
     return () => {
       scene.remove(light);
       scene.remove(ambient);
-      scene.remove(targetRef.current);
+      scene.remove(target);
     };
-  }, [scene]);
+  }, [scene, lightRef]);
 
   useFrame(() => {
     if (!lightRef.current) return;

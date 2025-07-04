@@ -40,15 +40,17 @@ export default function EarthMesh({ children, rotationRef }) {
     }
   });
 
-  const earthtexture = useMemo(
-    () => new THREE.TextureLoader().load("/textures/earth.jpg"),
-    [],
-  );
+  const earthtexture = useMemo(() => {
+    const loader = new THREE.TextureLoader();
+    loader.setCrossOrigin("anonymous");
+    return loader.load("/textures/earth.jpg");
+  }, []);
 
-  const cloudTexture = useMemo(
-    () => new THREE.TextureLoader().load("/textures/2k_earth_clouds.jpg"),
-    [],
-  );
+  const cloudTexture = useMemo(() => {
+    const loader = new THREE.TextureLoader();
+    loader.setCrossOrigin("anonymous");
+    return loader.load("/textures/2k_earth_clouds.jpg");
+  }, []);
 
   const gridGroup = useMemo(() => {
     const group = new THREE.Group();
