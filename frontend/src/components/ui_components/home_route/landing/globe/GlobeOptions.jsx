@@ -3,10 +3,11 @@ export const ENABLE_HELPERS = false;
 // GLOBE
 
 export const GLOBE_SIZE = 1;
-export const GLOBE_ORBIT_CONTROL_MIN_DIST = 1.7;
-export const GLOBE_ORBIT_CONTROL_MAX_DIST = 1.7;
+export const GLOBE_ORBIT_CONTROL_MIN_DIST = 1.3;
+export const GLOBE_ORBIT_CONTROL_MAX_DIST = 1.3;
 export const GLOBE_INITIAL_ANIMATION_SPEED = 1;
 export const GLOBE_INITIAL_ANIMATION_DURATION = 8;
+export const FOV = 120;
 
 // PINS
 

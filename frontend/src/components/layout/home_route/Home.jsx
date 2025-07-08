@@ -27,13 +27,14 @@ const Home = () => {
           <div className="flex flex-col">
             <div className="fixed inset-0 w-full h-full -z-20 bg-clip-padding">
               <Grid />
+              <Grid className="landscape:hidden" />
             </div>
-            <div className="fixed inset-0 w-full h-full -z-10 bg-base/20 dark:bg-base-300/20 backdrop-blur-sm dark:backdrop-blur-md"></div>
+            <div className="fixed inset-0 w-full h-full -z-10 bg-base-300/20 landscape:backdrop-blur-sm backdrop-blur-xs dark:landscape:backdrop-blur-md"></div>
             <div className="h-[64px]"></div>
             <Suspense fallback={null}>
               <Element
                 name="landing"
-                className="active md:bg-gradient-to-r from-base-200 to-base-200/0 md:via-base-200/20"
+                className="active bg-gradient-to-r from-base-200 to-base-200/0 via-base-200/20"
               >
                 <div className="bg-gradient-to-b from-base-300 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
                   <Landing />
@@ -42,7 +43,7 @@ const Home = () => {
               <div className="">
                 <Element
                   name="about"
-                  className="bg-gradient-to-b md:bg-gradient-to-r from-base-200/0 to-base-200 via-base-200/50 md:via-base-200/80"
+                  className="bg-gradient-to-b landscape:bg-gradient-to-r from-base-200/0 to-base-200 via-base-200/50 landscape:via-base-200/80"
                 >
                   <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
                     <About />
@@ -61,7 +62,7 @@ const Home = () => {
                 <Element name="contact" className="">
                   <div
                     id="contact"
-                    className="bg-gradient-to-b from-base-200 to-base-300 via-base-200/0 md:h-[calc(100dvh_-_64px)] flex items-center justify-center"
+                    className="bg-gradient-to-b from-base-200 to-base-300 via-base-200/0 landscape:h-[calc(100dvh_-_64px)] flex items-center justify-center"
                   >
                     <ContactUs />
                   </div>

@@ -15,6 +15,7 @@ import {
   GLOBE_ORBIT_CONTROL_MAX_DIST,
   GLOBE_INITIAL_ANIMATION_SPEED,
   GLOBE_INITIAL_ANIMATION_DURATION,
+  FOV,
   DEFAULT_TRAVEL_PATH,
   TRAVEL_PATH,
   PINS,
@@ -51,8 +52,8 @@ export default function Globe() {
   }, [travelPath]);
 
   return (
-    <div className="w-full h-full bg-transparent">
-      <Canvas camera={{ position: [0, 0, 2] }}>
+    <div className="w-full h-full bg-transparent overflow-visible">
+      <Canvas camera={{ position: [0, 0, 2], fov: FOV }}>
         <Lighting lightRef={lightRef} />
 
         <EarthMesh rotationRef={rotationRef}>

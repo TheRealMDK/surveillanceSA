@@ -4,7 +4,7 @@ import igLogo from "../../../../assets/logos/socials/Instagram_Glyph_Gradient.pn
 
 const Footer = () => {
   return (
-    <footer className="footer flex-col md:flex-row bg-base-300 text-neutral-content p-8 md:p-4 flex items-center justify-around">
+    <footer className="footer flex-col landscape:flex-row bg-base-300 text-neutral-content p-8 landscape:p-4 flex items-center justify-around">
       <aside>
         <Logo className="h-[100px] w-auto" />
       </aside>
