@@ -1,16 +1,10 @@
-const HumanAndVehicleAiIcon = ({
-  className = "",
-  width = "36",
-  height = "36",
-}) => {
+const HumanAndVehicleAiIcon = ({ className = "" }) => {
   const pathClass = "fill-base-content dark:fill-[#009A99] fill-opacity-100";
 
   return (
     <>
       <svg
-        className={className}
-        width={width}
-        height={height}
+        className={`w-[36px] h-[36px] ${className}`}
         viewBox="0 0 9.5249995 9.5250003"
         version="1.1"
         id="svg1"

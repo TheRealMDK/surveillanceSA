@@ -92,3 +92,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+[id] {
+  scroll-margin-top: 64px;
+}

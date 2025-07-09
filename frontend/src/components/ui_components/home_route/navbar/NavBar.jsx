@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import ThemeSwitch from "../../ThemeSwitch";
 import useHasScrolled from "../../../../hooks/useHasScrolled";
 
@@ -8,7 +7,7 @@ const NavBar = ({ content }) => {
   return (
     <div id="top" className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle z-30" />
-      <div className="drawer-content flex flex-col">
+      <div className="drawer-content flex flex-col scroll-smooth">
         {/* Navbar */}
         <div
           className={`navbar bg-base-300 w-full fixed top-0 z-10 ${hasScrolled ? "shadow-md dark:shadow-none shadow-neutral-400 dark:border-1 border-neutral-800" : "border-0 shadow-none"}`}
@@ -35,86 +34,78 @@ const NavBar = ({ content }) => {
                 </svg>
               </label>
             </div>
-            <Link
-              to={hasScrolled ? "landing" : "footer"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
+            <a
+              href={hasScrolled ? "#landing" : "#footer"}
               className="btn btn-ghost text-xl"
             >
               Surveillance SA
-            </Link>
+            </a>
           </div>
           <div className="navbar-center">
             <div className="hidden flex-none lg:block">
               <ul className="menu menu-horizontal gap-2">
                 {/* Navbar menu content here */}
                 <li>
-                  <Link
-                    to="landing"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-64}
-                    activeClass="menu-active"
-                    className=""
+                  <a
+                    href="#landing"
+                    className="transition-all duration-300 ease-in-out"
                   >
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-64}
-                    activeClass="menu-active"
-                    className=""
+                  <a
+                    href="#about"
+                    className="transition-all duration-300 ease-in-out"
                   >
                     About
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="services"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-64}
-                    activeClass="menu-active"
-                    className=""
-                  >
-                    Services
-                  </Link>
+                  <details>
+                    <summary>
+                      <a
+                        href="#services"
+                        className="transition-all duration-300 ease-in-out"
+                      >
+                        Services
+                      </a>
+                    </summary>
+                    <ul className="p-2 min-w-max">
+                      <li>
+                        <a
+                          href="#service_1"
+                          className="transition-all duration-300 ease-in-out"
+                        >
+                          Submenu 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#service_2"
+                          className="transition-all duration-300 ease-in-out"
+                        >
+                          Submenu 2
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li>
-                  <Link
-                    to="gallery"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-64}
-                    activeClass="menu-active"
-                    className=""
+                  <a
+                    href="#gallery"
+                    className="transition-all duration-300 ease-in-out"
                   >
                     Gallery
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-64}
-                    activeClass="menu-active"
-                    className=""
+                  <a
+                    href="#contact"
+                    className="transition-all duration-300 ease-in-out"
                   >
                     Contact Us
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -137,84 +128,75 @@ const NavBar = ({ content }) => {
         <ul className="menu bg-base-200 min-h-full w-80 p-4 gap-2 top-[64px]">
           {/* Navbar menu content here */}
           <li>
-            <Link
-              to="landing"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
-              className=""
+            <a
+              href="#landing"
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
             >
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
-              className=""
+            <a
+              href="#about"
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
             >
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
-              className=""
+            <a
+              href="#services"
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
             >
               Services
-            </Link>
+            </a>
+            <ul className="p-2">
+              <li>
+                <a
+                  href="#service_1"
+                  className="transition-all duration-300 ease-in-out"
+                  onClick={() => {
+                    document.getElementById("my-drawer-3").checked = false;
+                  }}
+                >
+                  Surveillance and System Health Monitoring
+                </a>
+              </li>
+              <li>
+                <a>Submenu 2</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <Link
-              to="gallery"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
-              className=""
+            <a
+              href="#gallery"
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
             >
               Gallery
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass="menu-active"
-              className=""
+            <a
+              href="#contact"
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 document.getElementById("my-drawer-3").checked = false;
               }}
             >
               Contact Us
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

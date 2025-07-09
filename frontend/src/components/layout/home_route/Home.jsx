@@ -1,5 +1,4 @@
 import { Suspense, useEffect, useState } from "react";
-import { Element } from "react-scroll";
 import LoadingScreen from "../../../components/ui_components/LoadingScreen";
 import NavBar from "../../ui_components/home_route/navbar/NavBar";
 import Footer from "../../ui_components/home_route/footer/Footer";
@@ -32,49 +31,53 @@ const Home = () => {
             <div className="fixed inset-0 w-full h-full -z-10 bg-base-300/20 landscape:backdrop-blur-sm backdrop-blur-xs dark:landscape:backdrop-blur-md"></div>
             <div className="h-[64px]"></div>
             <Suspense fallback={null}>
-              <Element
-                name="landing"
+              <section
+                id="landing"
                 className="active bg-gradient-to-r from-base-200 to-base-200/0 via-base-200/20"
               >
                 <div className="bg-gradient-to-b from-base-300 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
                   <Landing />
                 </div>
-              </Element>
-              <div className="">
-                <Element
-                  name="about"
-                  className="bg-gradient-to-b landscape:bg-gradient-to-r from-base-200/0 to-base-200 via-base-200/50 landscape:via-base-200/80"
-                >
-                  <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
-                    <About />
-                  </div>
-                </Element>
-                <Element name="services" className="">
-                  <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
-                    <Services />
-                  </div>
-                </Element>
-                <Element name="gallery" className="">
-                  <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
-                    <Gallery />
-                  </div>
-                </Element>
-                <Element name="contact" className="">
-                  <div
-                    id="contact"
-                    className="bg-gradient-to-b from-base-200 to-base-300 via-base-200/0 landscape:h-[calc(100dvh_-_64px)] flex items-center justify-center"
-                  >
-                    <ContactUs />
-                  </div>
-                </Element>
+              </section>
+              <section
+                id="about"
+                className="bg-gradient-to-b landscape:bg-gradient-to-r from-base-200/0 to-base-200 via-base-200/50 landscape:via-base-200/80"
+              >
+                <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
+                  <About />
+                </div>
+              </section>
+              <div className="bg-base-200 landscape:hidden">
+                <div className="w-[90%] h-0.5 ml-[5%] bg-cyber_teal"></div>
               </div>
+              <section id="services" className="">
+                <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0  min-h-[calc(100dvh_-_64px)] flex items-center justify-center">
+                  <Services />
+                </div>
+              </section>
+              <div className="bg-base-200 landscape:hidden">
+                <div className="w-[90%] h-0.5 ml-[5%] bg-cyber_teal"></div>
+              </div>
+              <section id="gallery" className="">
+                <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
+                  <Gallery />
+                </div>
+              </section>
+              <section id="contact" className="">
+                <div
+                  id="contact"
+                  className="bg-gradient-to-b from-base-200 to-base-300 via-base-200/0 landscape:h-[calc(100dvh_-_64px)] flex items-center justify-center"
+                >
+                  <ContactUs />
+                </div>
+              </section>
             </Suspense>
           </div>
         }
       />
-      <Element name="footer" className="">
+      <section id="footer" className="">
         <Footer />
-      </Element>
+      </section>
     </>
   );
 };

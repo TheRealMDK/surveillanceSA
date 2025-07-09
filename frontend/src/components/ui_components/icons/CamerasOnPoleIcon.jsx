@@ -1,16 +1,10 @@
-const CamerasOnPoleIcon = ({
-  className = "",
-  width = "6.9412537mm",
-  height = "9.5249987mm",
-}) => {
+const CamerasOnPoleIcon = ({ className = "" }) => {
   const pathClass = "fill-[#009A99] fill-opacity-100 stroke-0";
 
   return (
     <>
       <svg
-        className={className}
-        width={width}
-        height={height}
+        className={`w-[6.9412537mm] h-[9.5249987mm] ${className}`}
         viewBox="0 0 6.9412537 9.5249987"
         version="1.1"
         id="svg1"

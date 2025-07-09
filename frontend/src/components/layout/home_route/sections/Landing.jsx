@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import LandingMap from "../../../ui_components/home_route/landing/LandingMap";
 import Globe from "../../../ui_components/home_route/landing/globe/Globe";
 import useIsLandscape from "../../../../hooks/useIsLandscape";
@@ -7,7 +6,10 @@ const Landing = () => {
   const isLandscape = useIsLandscape();
   return (
     <>
-      <div className="w-[calc(100%_-_2rem)] landscape:w-[80vw] h-[calc(100dvh_-_64px)] flex flex-col-reverse landscape:flex-row">
+      <div
+        id="landing"
+        className="w-[calc(100%_-_2rem)] landscape:w-[80vw] h-[calc(100dvh_-_64px)] flex flex-col-reverse landscape:flex-row"
+      >
         <div className="flex-1">
           <div className="h-[calc((100dvh_-_64px)_/_2)] landscape:h-[calc(100dvh_-_64px)] flex flex-col justify-center items-center landscape:items-start gap-4">
             <h1 className="font-bold text-4xl md:text-5xl 2xl:text-7xl leading-tight text-center landscape:text-left">
@@ -28,19 +30,11 @@ const Landing = () => {
               <br />
               Proactive security and intelligent monitoring in real time.
             </p>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              activeClass=""
-              className=""
-            >
+            <a href="#contact" className="">
               <button className="btn btn-primary text-base-content">
                 Get Started
               </button>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex flex-1 items-center justify-center">

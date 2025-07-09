@@ -4,7 +4,10 @@ import Map from "../../../ui_components/home_route/contact_us/ContactMap";
 const ContactUs = () => {
   return (
     <>
-      <div className="w-[calc(100%_-_2rem)] landscape:w-[80vw] h-auto flex landscape:flex-row portrait:flex-col portrait:py-8 gap-16">
+      <div
+        id="contact"
+        className="w-[calc(100%_-_2rem)] landscape:w-[80vw] h-auto flex landscape:flex-row portrait:flex-col portrait:py-8 gap-16"
+      >
         <div className="flex-1 bg-base-200">
           <ContactForm />
         </div>
