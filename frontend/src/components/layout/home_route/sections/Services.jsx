@@ -19,7 +19,7 @@ import Service4Icon4 from "../../../ui_components/home_route/services/icons/Serv
 const Services = () => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="w-[calc(100%_-_2rem)] landscape:w-[80vw] flex flex-col gap-4 mb-11">
         <div
           id="service_1"
           className="w-full h-[calc(100dvh_-_64px)] bg-base-200/20 backdrop-blur-xs landscape:bg-[url('/services/desktop/service1ll.png')] dark:landscape:bg-[url('/services/desktop/service1ld.png')] bg-cover bg-center bg-no-repeat flex justify-center"
@@ -196,7 +196,7 @@ const Services = () => {
                   ]
                 </span>
               </h2>
-              <p className="text-md landscape:max-w-[70%] text-center landscape:text-left leading-tight tracking-wide">
+              <p className="text-md landscape:max-w-[60%] text-center landscape:text-left leading-tight tracking-wide">
                 Perimeter control is your first line of defence - and we make
                 sure it's a strong one. Our Perimeter Control solutions are
                 designed to monitor and secure the outer boundaries of your

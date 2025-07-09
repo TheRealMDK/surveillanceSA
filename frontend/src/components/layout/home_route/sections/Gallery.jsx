@@ -28,6 +28,7 @@ const Gallery = () => {
       });
     };
   }, []);
+
   return (
     <>
       {isLandscape ? (

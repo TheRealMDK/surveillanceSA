@@ -58,8 +58,9 @@ const Home = () => {
               <div className="bg-base-200 landscape:hidden">
                 <div className="w-[90%] h-0.5 ml-[5%] bg-cyber_teal"></div>
               </div>
-              <section id="gallery" className="">
-                <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 h-[calc(100dvh_-_64px)] flex items-center justify-center">
+              <section id="gallery" className="relative">
+                <div className="absolute inset-0 bg-white/70 dark:bg-black/60 backdrop-opacity-70 h-[calc(100dvh_-_64px)] hidden landscape:flex items-center justify-center w-full"></div>
+                <div className="bg-gradient-to-b from-base-200 to-base-200 via-base-200/0 landscape:from-cyber_teal_shade/70 landscape:to-cyber_teal_shade/70 landscape:via-cyber_teal_shade/70 h-[calc(100dvh_-_64px)] flex items-center justify-center">
                   <Gallery />
                 </div>
               </section>

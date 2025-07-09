@@ -126,7 +126,7 @@ const NavBar = ({ content }) => {
                     About
                   </a>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown dropdown-center">
                   <a
                     tabIndex="0"
                     href="#services"
