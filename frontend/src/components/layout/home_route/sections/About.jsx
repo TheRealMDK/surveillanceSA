@@ -55,7 +55,8 @@ const About = () => {
         </div>
         <div className="flex-1 flex justify-center items-center landscape:px-8 px-4">
           <div className="h-full w-auto flex items-center justify-center">
-            <CamerasOnPoleIcon className="w-auto h-full aspect-square" />
+            {/* <CamerasOnPoleIcon className="w-auto h-full aspect-square" /> */}
+            <img src="/about/about.png" className="w-full h-full object-fit" />
           </div>
         </div>
       </div>
