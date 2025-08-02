@@ -220,52 +220,52 @@ const Gallery = () => {
               </a>
             </div>
           </div>
-          <div
-            id="slide9"
-            className="relative carousel-item w-full flex items-center justify-center"
-          >
-            <img
-              src="/gallery/desktop/9.png"
-              className="w-full h-full object-fit"
-            />
-            <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a
-                href="#slide8"
-                className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal"
-              >
-                ❮
-              </a>
-              <a
-                href="#slide10"
-                className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal"
-              >
-                ❯
-              </a>
-            </div>
-          </div>
-          <div
-            id="slide10"
-            className="relative carousel-item w-full flex items-center justify-center"
-          >
-            <img
-              src="/gallery/desktop/1.jpg"
-              className="w-full h-full object-fit"
-            />
-            <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a
-                href="#slide9"
-                className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal"
-              >
-                ❮
-              </a>
-              <a
-                href="#slide1"
-                className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal"
-              >
-                ❯
-              </a>
-            </div>
-          </div>
+          {/* <div */}
+          {/*   id="slide9" */}
+          {/*   className="relative carousel-item w-full flex items-center justify-center" */}
+          {/* > */}
+          {/*   <img */}
+          {/*     src="/gallery/desktop/9.png" */}
+          {/*     className="w-full h-full object-fit" */}
+          {/*   /> */}
+          {/*   <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"> */}
+          {/*     <a */}
+          {/*       href="#slide8" */}
+          {/*       className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal" */}
+          {/*     > */}
+          {/*       ❮ */}
+          {/*     </a> */}
+          {/*     <a */}
+          {/*       href="#slide10" */}
+          {/*       className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal" */}
+          {/*     > */}
+          {/*       ❯ */}
+          {/*     </a> */}
+          {/*   </div> */}
+          {/* </div> */}
+          {/* <div */}
+          {/*   id="slide10" */}
+          {/*   className="relative carousel-item w-full flex items-center justify-center" */}
+          {/* > */}
+          {/*   <img */}
+          {/*     src="/gallery/desktop/1.jpg" */}
+          {/*     className="w-full h-full object-fit" */}
+          {/*   /> */}
+          {/*   <div className="carousel-nav absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"> */}
+          {/*     <a */}
+          {/*       href="#slide9" */}
+          {/*       className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal" */}
+          {/*     > */}
+          {/*       ❮ */}
+          {/*     </a> */}
+          {/*     <a */}
+          {/*       href="#slide1" */}
+          {/*       className="btn btn-circle hover:bg-cyber_teal hover:border-cyber_teal" */}
+          {/*     > */}
+          {/*       ❯ */}
+          {/*     </a> */}
+          {/*   </div> */}
+          {/* </div> */}
         </div>
       ) : (
         <div

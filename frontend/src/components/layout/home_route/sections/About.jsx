@@ -1,4 +1,4 @@
-import CamerasOnPoleIcon from "../../../ui_components/icons/CamerasOnPoleIcon";
+// import CamerasOnPoleIcon from "../../../ui_components/icons/CamerasOnPoleIcon";
 
 const About = () => {
   return (

@@ -30,8 +30,9 @@ const Footer = () => {
         </p>
         <div className="grid grid-flow-col gap-4">
           <a
-            href="https://www.facebook.com/profile.php?id=61576624582725"
+            href="https://www.facebook.com/baytrack/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="h-[36px] w-auto animate-pulse transition-all duration-500 ease-in-out"
